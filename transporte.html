@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Método de Transporte</title>
+  <link rel="stylesheet" href="css/style3.css">
+   <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4b2e05">
+</head>
+<body>
+  <div class="container">
+    <h1>Método de Transporte</h1>
+
+    <div class="config">
+      <label for="numOrigenes">Número de orígenes:</label>
+      <input type="number" id="numOrigenes" min="1" value="2">
+
+      <label for="numDestinos">Número de destinos:</label>
+      <input type="number" id="numDestinos" min="1" value="3">
+
+      <label for="tipoProblema">Tipo de problema:</label>
+      <select id="tipoProblema">
+        <option value="min">Minimizar</option>
+        <option value="max">Maximizar</option>
+      </select>
+
+      <button onclick="generarTabla()">Generar Tabla</button>
+    </div>
+
+    <div id="tablaContainer"></div>
+
+    <div class="center-btn">
+      <button id="resolverBtn" onclick="resolverTransporte()" style="display:none;">Resolver</button>
+    </div>
+
+    <div id="resultado"></div>
+
+    <div class="center-btn">
+      <a href="index.html"><button class="btn-regresar">Regresar al Inicio</button></a>
+    </div>
+  </div>
+
+  <script src="js/script3.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
+
